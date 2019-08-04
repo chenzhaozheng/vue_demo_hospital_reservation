@@ -1,6 +1,6 @@
 # mobile
 
-> A Vue.js project
+> 学习Vue的实现的Demo
 
 ## Build Setup
 
@@ -24,10 +24,9 @@ npm run unit
 npm test
 ```
 
-For a detailed explanation on how things work, check out the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
+参考广州市妇女儿童医疗中心网络医院的手机端做的实例，做为学习Vue的Demo，只是做了简单的界面，没接数据，后期有空再继续更新。
 
-
-### 业务逻辑情况
+### 接口业务逻辑情况【未实现】
 
 1. 院区列表接口
 2. 科室列表接口
