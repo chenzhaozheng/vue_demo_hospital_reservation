@@ -9,7 +9,7 @@ module.exports = {
 
     // Paths
     assetsSubDirectory: 'static',
-    assetsPublicPath: '/',
+    assetsPublicPath: '/vue_demo_hospital_reservation/',
     proxyTable: {},
 
     // Various Dev Server settings
