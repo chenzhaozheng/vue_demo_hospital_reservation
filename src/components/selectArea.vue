@@ -1,6 +1,6 @@
 <template>
   <div>
-    <van-cell class="select-area" is-link url="/#/appointment">
+    <van-cell class="select-area" v-on:click="adult">
       <template slot="icon">
         <img src="https://ihis.gzfezx.com/fyfwh-web/public/image/icon_20.png">
       </template>
@@ -8,7 +8,7 @@
         <div class="custom-text">儿童医院院区(人民中路318号)</div>
       </template>
     </van-cell>
-    <van-cell class="select-area" is-link>
+    <van-cell class="select-area" v-on:click="adult">
      <template slot="icon">
         <img src="https://ihis.gzfezx.com/fyfwh-web/public/image/icon_20.png">
       </template>
@@ -31,6 +31,14 @@
 <script>
 export default {
   name: 'selectArea',
+  methods: {
+    adult: function (event) {
+      this.$router.push({
+        path: 'appointment'
+      })
+      console.log(event.type)
+    }
+  },
   data () {
     return {
     }
