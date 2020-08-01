@@ -59,13 +59,13 @@ export default {
     },
     onSearch () {
     //   this.$toast('提示文案')
-    }, 
+    },
     adult: function (event) {
       this.$router.push({
         path: 'registration'
       })
       console.log(event.type)
-    }   
+    }
   }
 }
 </script>
