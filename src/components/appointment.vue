@@ -14,7 +14,7 @@
             <div slot="action" @click="onSearch" class="search-btn">搜索</div>
         </van-search>
         <div>
-            <van-cell class="select-appoint" is-link url="/#/registration">
+            <van-cell class="select-appoint" v-on:click="adult">
                 <template slot="icon">
                     <img width="20" height="20" src="http://www.benewit.cn/picProject/dept/20007.png">
                 </template>
@@ -59,7 +59,13 @@ export default {
     },
     onSearch () {
     //   this.$toast('提示文案')
-    }
+    }, 
+    adult: function (event) {
+      this.$router.push({
+        path: 'registration'
+      })
+      console.log(event.type)
+    }   
   }
 }
 </script>
